@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Left side - empty for now */}
         <Link
           href="/"
-          className="w-25 text-3xl font-extrabold tracking-wide text-blue-600 hover:text-blue-700 transition-colors"
+          className="w-25 text-3xl font-extrabold tracking-wide text-blue-800 hover:text-blue-500 transition-colors"
         >
           Fakestore
         </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
             placeholder="Search products..."
             value={searchQuery}
             onChange={(e) => dispatch(setSearchQuery(e.target.value))}
-            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-200 rounded-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-700"
           />
         </div>
 

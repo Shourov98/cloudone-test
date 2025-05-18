@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../store/cartSlice';
 import ProductDetailsModal from './ProductDetailsModal';
 import HoverTooltip from './HoverTooltip';
+import { Button } from './ui/button';
 
 
 // Truncate long descriptions to fit within the tooltip
@@ -43,15 +44,15 @@ export default function ProductCard({ product }) {
 
         <h3 className="text-sm font-semibold line-clamp-2 mb-2 mt-3">{product.title}</h3>
         <p className="text-lg font-bold mb-4">${product.price.toFixed(2)}</p>
-        <button
+        <Button
           onClick={() => dispatch(addToCart(product))}
           disabled={isInCart}
           className={`mt-auto py-2 rounded-md text-white ${
-            isInCart ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
+            isInCart ? 'bg-gray-200 cursor-not-allowed' : 'bg-blue-800 hover:bg-blue-500'
           } transition-colors duration-300`}
         >
           {isInCart ? 'In Cart' : 'Add to Cart'}
-        </button>
+        </Button>
       </div>
 
       {/* Product details modal */}
