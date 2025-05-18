@@ -113,15 +113,9 @@ src/
 
 ## 📫 Contact
 
-For questions or contributions, please open an issue or contact \[[your-email@example.com](mailto:your-email@example.com)].
+For questions or contributions, please open an issue or contact \[[mahbubulhoqueshourov@gmail.com](mailto:mahbubulhoqueshourov@gmail.com)].
 
 ---
 
 Enjoy exploring and customizing your Fakestore app! 🎉
 
-```
-
----
-
-If you want, I can help customize this further with badges, screenshots, or deployment instructions!
-```
