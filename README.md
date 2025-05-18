@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sure! Here’s a well-structured **README.md** template for your Next.js project with Redux Toolkit, Tailwind CSS, shadcn/ui, and your custom tooltip & modal components.
 
-## Getting Started
+---
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Fakestore Next.js App
+
+A responsive e-commerce frontend built with Next.js, Redux Toolkit, Tailwind CSS, and shadcn/ui.  
+Features product listing from FakeStore API, a dynamic cart sidebar, product details modal, and a custom tooltip for quick info preview.
+
+---
+
+## 📂 Project Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+src/
+├── app/                     # Next.js App Router pages and layouts
+├── components/              # React components
+│   ├── Cart.jsx             # Cart sidebar component
+│   ├── CartItem.jsx         # Cart item with quantity controls and tooltip
+│   ├── HoverTooltip.jsx     # Custom tooltip component with delay and dynamic positioning
+│   ├── Navbar.jsx           # Navigation bar with search, cart toggle, and profile icon
+│   ├── ProductCard.jsx      # Product card with add-to-cart and tooltip
+│   ├── ProductDetailsModal.jsx # Modal component for detailed product info
+│   └── ProductDetailsTooltip.jsx # Tooltip wrapper (optional if used)
+├── store/                   # Redux Toolkit slices and store config
+│   ├── cartSlice.js
+│   ├── productSlice.js
+│   └── searchSlice.js
+├── api/                     # API calls and utilities (e.g. fakestore API)
+│   └── api.js
+├── styles/                  # Global CSS and Tailwind config
+│   └── globals.css
+└── ...
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+````
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 13** — React framework with App Router and server/client components  
+- **React 18** — Frontend UI library  
+- **Redux Toolkit** — State management (cart, products, search)  
+- **Tailwind CSS** — Utility-first CSS framework for styling  
+- **shadcn/ui** — Accessible UI components based on Radix UI primitives  
+- **React Icons** — For cart and profile icons  
+- **FakeStore API** — Public API for product data  
+- **React Portal** — For rendering tooltip outside overflow containers  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Running Locally
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js (>=16.x recommended)  
+- npm or yarn package manager  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/fakestore-nextjs.git
+   cd fakestore-nextjs
+````
+
+2. **Install dependencies**
+
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Or yarn:
+
+   ```bash
+   yarn
+   ```
+
+3. **Run development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Or with yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+4. **Open your browser**
+
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the app in action.
+
+---
+
+## ⚙️ Additional Notes
+
+* **State management:**
+  Redux Toolkit slices manage product fetching, cart state, and search filtering.
+
+* **Tooltips & Modals:**
+
+  * Custom `HoverTooltip` uses React portals to prevent clipping inside scrollable/cart sidebar.
+  * Product details modal appears on image click with full product info.
+
+* **Styling:**
+  Tailwind CSS with customizations in `globals.css` and class-based component styling.
+
+---
+
+## 📫 Contact
+
+For questions or contributions, please open an issue or contact \[[your-email@example.com](mailto:your-email@example.com)].
+
+---
+
+Enjoy exploring and customizing your Fakestore app! 🎉
+
+```
+
+---
+
+If you want, I can help customize this further with badges, screenshots, or deployment instructions!
+```
