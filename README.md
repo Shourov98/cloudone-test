@@ -60,8 +60,8 @@ src/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/fakestore-nextjs.git
-   cd fakestore-nextjs
+   git clone https://github.com/Shourov98/cloudone-test.git
+   cd cloudone-test
 
 
 2. **Install dependencies**
