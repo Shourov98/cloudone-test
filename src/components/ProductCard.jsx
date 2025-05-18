@@ -48,7 +48,7 @@ export default function ProductCard({ product }) {
           onClick={() => dispatch(addToCart(product))}
           disabled={isInCart}
           className={`mt-auto py-2 rounded-md text-white ${
-            isInCart ? 'bg-gray-200 cursor-not-allowed' : 'bg-blue-800 hover:bg-blue-500'
+            isInCart ? 'bg-gray-600 cursor-not-allowed' : 'bg-blue-800 hover:bg-blue-500'
           } transition-colors duration-300`}
         >
           {isInCart ? 'In Cart' : 'Add to Cart'}
