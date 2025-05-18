@@ -1,6 +1,3 @@
-Sure! Here’s a well-structured **README.md** template for your Next.js project with Redux Toolkit, Tailwind CSS, shadcn/ui, and your custom tooltip & modal components.
-
----
 
 
 # Fakestore Next.js App
@@ -15,22 +12,22 @@ Features product listing from FakeStore API, a dynamic cart sidebar, product det
 ```
 
 src/
-├── app/                     # Next.js App Router pages and layouts
-├── components/              # React components
-│   ├── Cart.jsx             # Cart sidebar component
-│   ├── CartItem.jsx         # Cart item with quantity controls and tooltip
-│   ├── HoverTooltip.jsx     # Custom tooltip component with delay and dynamic positioning
-│   ├── Navbar.jsx           # Navigation bar with search, cart toggle, and profile icon
-│   ├── ProductCard.jsx      # Product card with add-to-cart and tooltip
-│   ├── ProductDetailsModal.jsx # Modal component for detailed product info
-│   └── ProductDetailsTooltip.jsx # Tooltip wrapper (optional if used)
-├── store/                   # Redux Toolkit slices and store config
+├── app/                           # Next.js App Router pages and layouts
+├── components/                    # React components
+│   ├── Cart.jsx                   # Cart sidebar component
+│   ├── CartItem.jsx               # Cart item with quantity controls and tooltip
+│   ├── HoverTooltip.jsx           # Custom tooltip component with delay and dynamic positioning
+│   ├── Navbar.jsx                 # Navigation bar with search, cart toggle, and profile icon
+│   ├── ProductCard.jsx            # Product card with add-to-cart and tooltip
+│   ├── ProductDetailsModal.jsx    # Modal component for detailed product info
+│   └── ProductDetailsTooltip.jsx  # Tooltip wrapper (optional if used)
+├── store/                         # Redux Toolkit slices and store config
 │   ├── cartSlice.js
 │   ├── productSlice.js
 │   └── searchSlice.js
-├── api/                     # API calls and utilities (e.g. fakestore API)
+├── api/                           # API calls and utilities (e.g. fakestore API)
 │   └── api.js
-├── styles/                  # Global CSS and Tailwind config
+├── styles/                        # Global CSS and Tailwind config
 │   └── globals.css
 └── ...
 
