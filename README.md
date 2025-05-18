@@ -62,7 +62,7 @@ src/
    ```bash
    git clone https://github.com/your-username/fakestore-nextjs.git
    cd fakestore-nextjs
-````
+
 
 2. **Install dependencies**
 
