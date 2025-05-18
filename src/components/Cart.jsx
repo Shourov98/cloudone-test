@@ -4,6 +4,7 @@ import React, { forwardRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import CartItem from './CartItem';
 import { clearCart } from '../store/cartSlice';
+import { Button } from './ui/button';
 
 const Cart = forwardRef(({ isOpen }, ref) => {
   const dispatch = useDispatch();
@@ -50,6 +51,7 @@ const Cart = forwardRef(({ isOpen }, ref) => {
             <span>${totalPrice.toFixed(2)}</span>
           </div>
         </div>
+        <Button className='p-2 m-3 bg-blue-700 text-white'>Checkout</Button>
       </div>
     </div>
   );
