@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setSearchQuery } from '../store/searchSlice.js';
 import { FaShoppingCart, FaUserCircle } from 'react-icons/fa';
 import Cart from './Cart';
+import Link from 'next/link.js';
 
 export default function Navbar() {
   const dispatch = useDispatch();
@@ -46,7 +47,12 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-0 right-0 text-gray-800 bg-white shadow-md z-50 flex items-center justify-between px-4 sm:px-8 h-16">
         {/* Left side - empty for now */}
-        <div className="w-16"></div>
+        <Link
+          href="/"
+          className="w-25 text-3xl font-extrabold tracking-wide text-blue-600 hover:text-blue-700 transition-colors"
+        >
+          Fakestore
+        </Link>
 
         {/* Center search bar */}
         <div className="flex-grow mx-4 max-w-xl">
@@ -60,7 +66,7 @@ export default function Navbar() {
         </div>
 
         {/* Right icons */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <button
             id="cart-icon"
             aria-label="Toggle Cart"
