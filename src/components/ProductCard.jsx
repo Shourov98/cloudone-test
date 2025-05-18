@@ -26,11 +26,13 @@ export default function ProductCard({ product }) {
   return (
     <>
       <div className="bg-white rounded-md shadow-sm p-4 flex flex-col hover:shadow-md transition-shadow duration-300">
+        
+        {/* Product image with tooltip */}
         <HoverTooltip 
           maxWidth={400}
           content={
             <>
-              <p className="text-xs line-clamp-2 mb-2 mt-3">{truncate(product.description, 100)}</p>
+              <p className="text-xs line-clamp-5 mb-2 mt-3">{truncate(product.description, 100)}</p>
             </>
           }
         >

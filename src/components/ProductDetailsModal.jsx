@@ -18,7 +18,7 @@ export default function ProductDetailsModal({ product, onClose }) {
 
   return (
     <>
-      {/* Backdrop */}
+      {/* Backdrop Background Around Modal */}
       <div
         onClick={onClose}
         className="fixed inset-0 bg-black/50 z-40"
@@ -40,7 +40,7 @@ export default function ProductDetailsModal({ product, onClose }) {
           </button>
 
           <div className="flex space-x-3 flex-col md:flex-row p-6 space-y-6 md:space-y-0 md:space-x-6">
-            {/* Left: bigger product image */}
+            {/* Left: product image */}
             <div className="flex-shrink-0 md:w-2/3">
               <img
                 src={product.image}
@@ -49,7 +49,7 @@ export default function ProductDetailsModal({ product, onClose }) {
               />
             </div>
 
-            {/* Right: smaller details */}
+            {/* Right: Product details */}
             <div className="md:w-1/3 flex flex-col">
               <h2 className="text-2xl font-semibold mb-2">{product.title}</h2>
               <p className="text-xl font-bold text-blue-600 mb-4">
@@ -60,6 +60,7 @@ export default function ProductDetailsModal({ product, onClose }) {
               </p>
               <p className="mb-4 text-gray-700">{product.description}</p>
 
+              {/* Product rating */}
               <div className="mt-auto">
                 <p className="font-semibold">Rating:</p>
                 <div className="flex items-center space-x-2">

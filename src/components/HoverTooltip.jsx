@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 export default function HoverTooltip({ content, children, maxWidth = 400 }) {
   const [visible, setVisible] = useState(false);
-  const [position, setPosition] = useState('top'); // or 'bottom'
+  const [position, setPosition] = useState('top'); 
   const tooltipRef = useRef();
   const triggerRef = useRef();
   const showTimeout = useRef();
@@ -28,6 +28,7 @@ export default function HoverTooltip({ content, children, maxWidth = 400 }) {
   }, []);
 
   const handleMouseEnter = () => {
+
     // Show tooltip after 500ms hover delay
     showTimeout.current = setTimeout(() => {
       setVisible(true);
@@ -35,6 +36,7 @@ export default function HoverTooltip({ content, children, maxWidth = 400 }) {
   };
 
   const handleMouseLeave = () => {
+
     // Cancel show timer if leaving before 500ms
     clearTimeout(showTimeout.current);
     setVisible(false);

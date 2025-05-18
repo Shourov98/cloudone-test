@@ -41,7 +41,7 @@ export default function ProductList() {
 
   return (
     <div className="bg-gray-200 py-6">
-      <div className="max-w-[60vw] mx-auto">
+      <div className="mx-auto max-w-full lg:max-w-[60vw] md:max-w-[80vw] px-4">
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           {visibleProducts.map((product) => (
             <ProductCard key={product.id} product={product} />

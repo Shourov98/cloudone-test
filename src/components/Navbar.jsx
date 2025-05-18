@@ -49,13 +49,15 @@ export default function Navbar() {
         {/* Left side - empty for now */}
         <Link
           href="/"
-          className="w-25 text-3xl font-extrabold tracking-wide text-blue-800 hover:text-blue-500 transition-colors"
+          className="font-extrabold tracking-wide text-blue-800 hover:text-blue-500 transition-colors
+            text-xl sm:text-2xl md:text-3xl
+            px-2 sm:px-4"
         >
           Fakestore
         </Link>
 
         {/* Center search bar */}
-        <div className="flex-grow mx-4 max-w-xl">
+        <div className="flex-grow mx-2 sm:mx-4 max-w-full sm:max-w-lg md:max-w-xl">
           <input
             type="text"
             placeholder="Search products..."
